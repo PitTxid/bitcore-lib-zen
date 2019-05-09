@@ -9,8 +9,8 @@ bitcore.versionGuard = function(version) {
     var message = 'More than one instance of bitcore-lib-zen found. ' +
       'Please make sure to require bitcore-lib-zen and check that submodules do' +
       ' not also include their own bitcore-lib-zen dependency.';
-    // TODO: put this back if we start versioning again
-    //throw new Error(message);
+    //TODO: put this back if we start versioning again
+    throw new Error(message);
   }
 };
 bitcore.versionGuard(global._bitcoreZen);
